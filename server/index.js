@@ -8,7 +8,7 @@ app.use((req, res, next) => {
     console.log(`${req.method}: ${req.originalUrl} - ${time}`);
     next();
 });
-
+// the path of the static files is incorrect please fix it.
 const pathToDistFolder = path.join(__dirname, '../dist');
 app.use(express.static(pathToDistFolder));
 
